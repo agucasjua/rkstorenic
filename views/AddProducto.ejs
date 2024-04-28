@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/Identidad/Logo RK Store - Icono.ico" type="image/x-icon">
+    <title>Nuevo Producto</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- SweetAlert CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.28/dist/sweetalert2.min.css">
+        <!-- BoxIcons -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <!-- Local CSS -->
+        <link type="text/css" rel="stylesheet" href="/css/AddProducto.css">
+</head>
+<body>
+
+    <div class="nav-back">
+        <a href="/index" class="btn btn-warning"><i class='bx bxs-chevrons-left'></i>  Catalogo</a>
+        <a href="/listadoUser" class="btn btn-primary"><i class='bx bxs-food-menu'></i>  Listado Usuarios</a>
+        <a href="/listadoProductos" class="btn btn-primary"><i class='bx bxs-food-menu'></i>  Listado Productos</a>
+      </div>
+
+    <h4 class="text-center bg-light p-2">FORMULARIO DE REGISTRO DE PRODUCTO</h4>
+
+    <div class="container-form m-5" style="width: 100%; display: flex; justify-content: center;">
+        <div class="card border-secondary p-4 m-2" style="display:flex; width:60%; align-items: center; justify-content: center;">
+        <form id="formulario" class="formulario" action="" method="POST">
+
+            <div class="form-body">
+                <div class="cont-img m-3">
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="inputImage">Subir imagen</label>
+                        <input type="file" class="form-control" name="inputImage" id="inputImage" accept="image/jpeg">
+                    </div>
+                </div>
+
+                <div class="name-lastname m-3">
+                    <div class="input-group">
+                        <span class="input-group-text">Código y Nombre</span>
+                        <input type="text" id="codigoProducto" name="codigoProducto" class="form-control" required>
+                        <input type="text" id="nombreProducto" name="nombreProducto" placeholder="Nombre Producto" class="form-control" required>
+                    </div>
+                </div>
+
+                <div class="cont-price m-3">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Precio</span>
+                        <span class="input-group-text">$</span>
+                        <input name="precioProducto" id="precioProducto" type="text" class="form-control">
+                    </div>
+                    <div class="input-group mb-3 cont-preciocord">
+                        <span class="input-group-text">Precio</span>
+                        <span class="input-group-text">C$</span>
+                        <input type="text" class="form-control" disabled readonly>
+                    </div>
+                </div>
+
+                <div class="cont-categ-estatus m-3">
+
+                    <div class="input-group mb-2">
+                        <label class="input-group-text" for="categoriaP">Categoría</label>
+                        <select class="form-select" name="categoriaProducto" id="categoriaProducto" required>
+                          <option selected disabled>Seleccionar</option>
+                          <option value="Todas">Todas</option>
+                          <option value="Camisas">Camisas</option>
+                          <option value="Camisetas">Camisetas</option>
+                          <option value="Blusas">Blusas</option>
+                          <option value="Chaquetas">Chaquetas</option>
+                          <option value="Vestidos">Vestidos</option>
+                          <option value="Faldas">Faldas</option>
+                          <option value="Fajas">Fajas</option>
+                          <option value="Pijamas">Pijamas</option>
+                          <option value="Ropa Deportiva">Ropa Deportiva</option>
+                          <option value="Ropa Interior">Ropa Interior</option>
+                          <option value="Ropa Niños">Ropa para Niños</option>
+                          <option value="Ropa Baño">Ropa de Baño</option>
+                          <option value="Accesorio">Accesorios</option>
+                          <option value="Calzado">Calzado</option>
+                          <option value="Camisolas">Camisolas</option>
+                          <option value="Calcetas">Calcetas</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group mb-2 cont-estado">
+                
+                        <label class="input-group-text" for="estadoP">Estado</label>
+                        <select class="form-select"  id="estadoProducto" name="estadoProducto" required>
+                          <option selected disabled>Seleccionar</option>
+                          <option value="Disponible">Disponible</option>
+                          <option value="Agotado">Agotado</option>
+                          <option value="Proximamente">Proximamente</option>
+                        </select>
+                    </div>
+    
+                </div>
+
+                <div class="detalle m-3">
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Descripción:</label>
+                        <textarea class="form-control" id="descripcionProducto" rows="3" maxlength="250"></textarea>
+                      </div>
+                </div>
+                
+            </div>
+
+            <div class="form-footer">
+                <div class="cont-btn m-3 text-center">
+                    <input id="btnSaveProducto" type="submit" class="btn btn-success" value="Registrar Producto">
+                    <a href="" id="btnCancelar" class="btn btn-secondary">Cancelar</a>
+                </div>
+            </div>
+
+        </form> 
+    </div>           
+    </div>
+
+
+    <!--SWEETALERT JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.28/dist/sweetalert2.all.min.js"></script>
+    <!--Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

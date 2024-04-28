@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/Identidad/Logo RK Store - Icono.ico" type="image/x-icon">
+    <title>Inicio Rk Store</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- SweetAlert CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.28/dist/sweetalert2.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <!-- Local CSS -->
+        <link rel="stylesheet"  href="/css/index.css">
+</head>
+<body>
+
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="#" class="logo">
+            <img src="/images/Identidad/Logo RK Store - PNG.png" alt="Logo RK Store" width="100px">
+            <!--<span class="r">RK</span> <span class="store">Store</span> <span>.</span>-->
+        </a>
+
+        <nav class="navbar">
+            <a href="#about">Acerca De</a>
+            <a href="/Catalogo">Productos</a>
+            <a href="/Contacto">Contacto</a>
+        </nav>
+        <div class="icons">
+            <a href="#comentarios" class="fas fa-heart"></a>
+            <a href="/login" class="fas fa-solid fa-user"></a>
+        </div>
+    </header>
+
+    <!--  Home section start  -->
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3 class="text-white">Tienda en Línea</h3>
+            <hr>
+            <span class="text-white">Tu vestimenta y Accesorios de calidad solo aquí</span>
+            <p>¡Bienvenidos a nuestro sitio web!</p>
+            <a href="/Catalogo" class="btn-Catalogo">Ver Catálogo</a>
+        </div>
+
+    </section>
+    
+    <div class="container-carousel-fotos mt-4">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/images/Carousel/1.webp" width="660px" height="300px" class="d-block" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/images/Carousel/2.webp" width="660px" height="380px" class="d-block" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/images/Carousel/3.webp" width="660px" height="380px" class="d-block" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/images/Carousel/4.webp" width="660px" height="380px" class="d-block" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/images/Carousel/5.webp" width="660px" height="380px" class="d-block" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/images/Carousel/6.webp" width="660px" height="380px" class="d-block" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/images/Carousel/7.webp" width="660px" height="380px" class="d-block" alt="...">
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  Acerca de section start  -->
+    <section class="about" id="about">
+        <h1 class="heading"><span>Acerca De Nosotros</span></h1>
+
+        <div class="row">
+            <div class="video-container">
+               <img src="/images/video/VideoInicio.gif"></img>
+                <h3>¡Tu mejor tienda online Aquí!</h3>
+            </div>
+            <div class="content">
+                <h3>¿Por qué Nosotros?</h3>
+                <p>En RK Store, nos apasiona ofrecerte lo último en moda, calidad y estilo. Nuestra tienda en línea es el destino 
+                    ideal para aquellos que buscan prendas que reflejen su personalidad, su estilo de vida y su individualidad.</p>
+                <p>¡Únete a nuestra comunidad de amantes de la moda y descubre un mundo de estilo, calidad y comodidad! Gracias por elegir RK Store</p>
+            </div>
+        </div>
+    </section>
+
+    <!--  Icons section start  -->
+    <section class="container-icons">
+
+        <div class="icons">
+            <i class="fas fa-solid fa-truck"></i>
+            <div class="info">
+                <h3>Delivery con Costo Adicional</h3>
+                <span>Disfruta de tus prendas favoritas sin demora.</span>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-solid fa-tags"></i>
+            <div class="info">
+                <h3>Variedad de Estilos</h3>
+                <span>Amplia gama de estilos</span>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-solid fa-cart-plus" ></i>
+            <div class="info">
+                <h3>Compra Simple y Segura</h3>
+                <span>¡Haz tu compra con confianza y tranquilidad desde la comodidad de tu hogar!</span>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-solid fa-users"></i>
+            <div class="info">
+                <h3>Atención al Cliente Personalizada</h3>
+                <span>Estamos listos para asistirte</span>
+            </div>
+        </div>
+
+    </section>
+    <!------------------------------APARTADO DE REVIEWS---------------------------------->
+    <section class="title-coments text-center">
+        <h2>¿Qué opinan nuestros clientes?</h2>
+    </section>
+
+    <!--  Comentarios follow start  -->
+    <section class="comentarios" id="comentarios">
+        <div class="coment">
+            <div class="com-header">
+                <div class="cont-img">
+                    <img src="/images/Resenias/Katherine.jpg" alt="">
+                </div>
+                <div class="identidad">
+                    <h5>Katherine Díaz</h5>
+                    <hr>
+                </div>
+            </div>
+            <div class="com-body">
+                <p>Encantada con esta tienda. Ropa muy bonita y de calidad. Atención inmejorable! Da gusto hacer mis compras.</p>
+            </div>
+            <hr>
+            <div class="com-footer">
+                <i class="fas fa-solid fa-star"></i>
+                <i class="fas fa-solid fa-star"></i>
+                <i class="fas fa-solid fa-star"></i>
+                <i class="fas fa-regular fa-star"></i>          
+            </div>
+        </div>
+        <div class="coment">
+            <div class="com-header">
+                <div class="cont-img">
+                    <img src="/images/Resenias/Gabriela.jpg" alt="">
+                </div>
+                <div class="identidad">
+                    <h5>Gabriela Aragón</h5>
+                    <hr>
+                </div>
+            </div>
+            <div class="com-body">
+                <p>Cuando hice mi primer pedido en esta tienda yquedé encantada no sólo con las prendas (un conjunto de baby y short veranero),
+                    Sin duda, son diferentes a otras tiendas, Gracias de corazón ♥️
+                </p>
+            </div>
+            <hr>
+            <div class="com-footer">
+                <i class="fas fa-solid fa-star"></i>
+                <i class="fas fa-solid fa-star"></i>
+                <i class="fas fa-solid fa-star"></i>         
+            </div>
+        </div>
+        <div class="coment">
+            <div class="com-header">
+                <div class="cont-img">
+                    <img src="/images/Resenias/Aguirre.jpg" alt="">
+                </div>
+                <div class="identidad">
+                    <h5>Ramón Aguirre</h5>
+                    <hr>
+                </div>
+            </div>
+            <div class="com-body">
+                <p>Me gusta todo de esta tienda!! Ropa súper actual, buen precio, buena calidad, y atención y trato esquisito.
+                    La recomiendo</p>
+            </div>
+            <hr>
+            <div class="com-footer">
+                <i class="fas fa-solid fa-star"></i>
+                <i class="fas fa-solid fa-star"></i>
+                <i class="fas fa-solid fa-star"></i>
+                <i class="fas fa-light fa-star"></i>
+                <i class="fas fa-light fa-star"></i>            
+            </div>
+        </div>
+        <div class="coment">
+            <div class="com-header">
+                <div class="cont-img">
+                    <img src="/images/Resenias/Itan.jpg" alt="">
+                </div>
+                <div class="identidad">
+                    <h5>Itan Ruiz</h5>
+                    <hr>
+                </div>
+            </div>
+            <div class="com-body">
+                <p>La atención es de 10, los pedidos llegan súper rápido y me encanta todo lo que tienen.</p>
+            </div>
+            <hr>
+            <div class="com-footer">
+                <i class="fas fa-solid fa-star"></i>
+                <i class="fas fa-solid fa-star"></i>
+                <i class="fas fa-solid fa-star"></i>
+                <i class="fas fa-solid fa-star"></i>
+                       
+            </div>
+        </div>
+
+        <div class="coment">
+            <div class="com-header">
+                <div class="cont-img">
+                    <img src="/images/Resenias/Itan.jpg" alt="">
+                </div>
+                <div class="identidad">
+                    <h5>Ana Casco</h5>
+                    <hr>
+                </div>
+            </div>
+            <div class="com-body">
+                <p>Me gustan las prendas que traen muy actuales y de buena calidad.</p>
+            </div>
+            <hr>
+            <div class="com-footer">
+                <i class="fas fa-solid fa-star"></i>
+                <i class="fas fa-solid fa-star"></i>
+                <i class="fas fa-solid fa-star"></i>
+                <i class="fas fa-solid fa-star"></i>
+                <i class="fas fa-regular fa-star"></i>         
+            </div>
+        </div>
+
+        <div class="coment">
+            <div class="com-header">
+                <div class="cont-img">
+                    <img src="/images/Resenias/Itan.jpg" alt="">
+                </div>
+                <div class="identidad">
+                    <h5>Alexander Larios</h5>
+                    <hr>
+                </div>
+            </div>
+            <div class="com-body">
+                <p>Los precios de las prendas para hombres son bastantes accesibles.</p>
+            </div>
+            <hr>
+            <div class="com-footer">
+                <i class="fas fa-solid fa-star"></i>
+                <i class="fas fa-solid fa-star"></i>
+                <i class="fas fa-solid fa-star"></i>
+                <i class="fas fa-solid fa-star"></i>
+                <i class="fas fa-regular fa-star"></i>         
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer">
+        <div class="container-ftr">
+            <div class="redes text-center" style="display: flex; flex-direction: column;">
+                <div class="redes-item cont-whats1 m-4">
+                    <a target="_blank" href="https://wa.link/i4czxh">
+                        <img src="" width="20px" alt="">
+                    </a>                 
+                </div>
+                <div class="redes-item cont-whats2 m-4">
+                    <a target="_blank" href="https://wa.link/izea2s">
+                        <img src="" width="20px" alt="">
+                    </a>                   
+                </div>
+                <div class="redes-item cont-ins m-4">
+                    <img src="" width="20px" alt="">
+                </div>
+            </div>
+
+            <div class="nav-foot mt-4 text-center">
+                <a class="m-4" href="#about">Acerca De</a>
+                <a class="m-4" href="/Catalogo">Productos</a>
+                <a class="m-4" href="/Contacto">Contacto</a>
+            </div>
+            <div class="derechos">
+                <hr class="ht-foot">
+                <p class="text-center"> © 2024 - <span style="font-weight: 600;"> TecnoAG </span> Todos los derechos reservados. </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script defer src="/js/idx.js"></script>
+    <!--SWEETALERT JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.28/dist/sweetalert2.all.min.js"></script>
+    <!--Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

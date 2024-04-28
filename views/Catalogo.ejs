@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/Identidad/Logo RK Store - Icono.ico" type="image/x-icon">
+    <title>Catálogo Web</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- SweetAlert CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.28/dist/sweetalert2.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <!-- Local CSS -->
+        <link rel="stylesheet" href="/css/Catalogo.css">
+</head>
+<body>
+
+    <header class="header">
+
+        <a href="#" class="logo">
+            <img src="/images/Identidad/Logo RK Store - PNG.png" alt="Logo RK Store" width="100px"> 
+        </a>
+
+        <nav class="navbar">
+            <a href="/index">Inicio</a>
+            <a href="/Contacto">Contacto</a>
+        </nav>
+
+    </header>
+
+    <!--  Home section start  -->
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3 class="text-white">Tienda en Línea RK Store</h3>
+            <span>¡Todo lo que buscas está aquí!</span>
+            <p>Bienvenidos a nuestro sitio web. Disfruta de nuestro Catálogo online.</p>
+            <hr>
+        </div>
+
+    </section>
+
+    <section class="Slider">
+        <div class="gallery-container">
+            <div class="slide"><img src="/images/Categorias/Blusas.webp" height="250px" width="250px" alt=""></div>
+            <div class="slide"><img src="/images/Categorias/Accesorios.webp" height="250px" width="250px" alt=""></div>
+            <div class="slide"><img src="/images/Categorias/Calcetas.webp" height="250px" width="250px" alt="" ></div>
+            <div class="slide"><img src="/images/Categorias/Calcetas.webp" height="250px" width="250px" alt="" ></div>
+            <div class="slide"><img src="/images/Categorias/Calzado.webp" height="250px" width="250px" alt="" ></div>
+            <div class="slide"><img src="/images/Categorias/Camisas.webp" height="250px" width="250px" alt=""></div>
+            <div class="slide"><img src="/images/Categorias/Camisetas.webp" height="250px" width="250px" alt=""></div>
+            <div class="slide"><img src="/images/Categorias/Camisolas.webp" height="250px" width="250px" alt=""></div>
+            <div class="slide"><img src="/images/Categorias/Chaquetas.webp" height="250px" width="250px" alt=""></div>
+            <div class="slide"><img src="/images/Categorias/Fajas.webp" height="250px" width="250px" alt=""></div>
+            <div class="slide"><img src="/images/Categorias/Faldas.webp" height="250px" width="250px" alt=""></div>
+            <div class="slide"><img src="/images/Categorias/Pijamas.webp" height="250px" width="250px" alt=""></div>
+            <div class="slide"><img src="/images/Categorias/Vestidos.webp" height="250px" width="250px" alt=""></div>
+            <div class="slide"><img src="/images/Categorias/RopaBaño.webp" height="250px" width="250px" alt=""></div>
+            <div class="slide"><img src="/images/Categorias/RopaDeportiva.webp" height="250px" width="250px" alt=""></div>
+            <div class="slide"><img src="/images/Categorias/RopaInteriror.webp" height="250px" width="250px" alt=""></div>
+            <div class="slide"><img src="/images/Categorias/RopaNiños.webp" height="250px" width="250px" alt=""></div>
+            <div class="slide"><img src="/images/Categorias/Otros+.webp" height="250px" width="250px" alt=""></div>
+        </div>
+    </section>
+
+    <div class="filtros-catalogo">
+
+        <div class="encabezado text-center mb-5">
+            <h3>FILTROS DE BUSQUEDAS</h3>
+            <h5>Puedes realizar una búsqueda de productos por <span> <strong>CATEGORIA</strong> </span> o por <span><strong>ESTADO</strong></span>.</h5>
+        </div>
+
+            <div class="cont-filtro-estado">
+                <div class="cont-estado">
+                  <div class="cont-estadosFiltro input-group mb-4">
+                    <label class="input-group-text" for="estadoP">Estado</label>
+                    <select class="form-select" name="estadoP" id="estadoP" required>
+                      <option selected disabled>Seleccionar</option>
+                      <option value="Disponible">Disponible</option>
+                      <option value="Proximamente">Proximamente</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="cont-btn">
+                  <button id="btnSearchEstado" class="btn btn-warning" type="submit">Buscar</button>
+                </div>
+              </div>
+    </div>
+
+
+    <div class="productos">
+        
+        <div class="all-products">
+            <% results.forEach((productos)=> { %>
+            <div class="product">
+                <div class="cont-img">
+                    <img src="data:image/jpeg;base64,<%- productos.imagenProduc.toString('base64') %>" alt="<%= productos.NombreProduc %>" width="150px" height="auto">
+                </div>
+                <div class="cont-product-info">
+                    <h5 class="product-title"><%= productos.NombreProduc  %></h5>
+                    <hr>
+                    <p class="product-status" ><%= productos.EstadoProduc  %></p>
+                    <div class="cont-prices">
+                        <div class="dolar">
+                            <p class="product-price-dolar text-success" id="precioDolar"> <strong>$ <%= productos.PrecioProduc  %></strong></p>
+                        </div>
+                        <div class="cordoba">
+                            <strong> <p class="product-price-cordoba text-success" id="precioCordoba"></p></strong>
+                        </div>                        
+                    </div>
+                    <p class="product-detalle"><%= productos.DetalleProduc  %></p>
+                    <hr>
+                    <p class="product-categoria"><%= productos.CategoriaProduc  %></p>
+                    
+                </div>
+            </div>
+            <% }) %>  
+        </div>
+        
+        
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--SWEETALERT JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.28/dist/sweetalert2.all.min.js"></script>
+    <!--Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- JS LOCAL -->
+    <script defer src="/js/Catalogo.js"></script>
+</body>
+</html>

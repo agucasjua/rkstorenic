@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(243, 148, 163);
+}
+
+.nav-back{
+    background-color: antiquewhite;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-back a{
+    color: black;
+    text-decoration: none;
+}
+
+.container-gene-list{
+    display: flex;
+    justify-content: center;
+}
+.container-listado{
+    width: 90%;
+    height: 500px; 
+    overflow: auto; 
+}
+.container-listado .table{
+    width: 100%;
+    border-collapse: collapse;
+}

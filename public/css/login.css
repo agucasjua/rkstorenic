@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(243, 148, 163);
+}
+
+.nav-back{
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 15px;
+}
+.nav-back a{
+    color: black;
+    text-decoration: none;
+}
+
+.form-label{
+    font-weight: 600;
+    color:antiquewhite;
+    text-shadow: 1px 1px rgb(63, 63, 63);
+}
+.container-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario-validacion{
+    width: 40%;
+    margin-top: 120px;
+}
+
+.cont-boton{
+    width: 100%;
+    text-align: center;
+}

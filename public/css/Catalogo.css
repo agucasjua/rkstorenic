@@ -1,0 +1,234 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+section{
+    padding: 2rem 9%;
+
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 202, 210);
+    padding: 20px;
+    box-shadow: 0 .3rem 1rem rgb(243, 148, 163);
+}
+.header .logo{
+    padding: 8px;
+    text-decoration: none;
+    color: rgb(41, 41, 90);
+    font-weight: 600;
+    font-size: 18px;
+}
+.header .logo .r{
+    color: rgb(243, 148, 163);
+    font-size: 18px;
+}
+.store{
+    color: rgb(41, 41, 90);
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    text-decoration: none;
+    color:#666;
+    margin-left: 25px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.navbar a:hover{
+    color: rgb(46, 46, 141);
+    transition: 1s;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+/*Section de presentacion*/
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 65vh;
+    background-color: rgb(243, 148, 163);
+    background-image: url(/images/Fondos/FondoInicio1.webp);
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 1rem 2rem rgb(243, 148, 163);
+}
+.home-image {
+    max-width: 100%;
+    height: auto;
+  }
+.home .content{
+    max-width: 50rem;
+}
+.home .content h3{
+    font-size: 6rem;
+    font-weight: 500;
+    color: rgb(243, 148, 163);
+    text-shadow: 1px 4px 3px #d67272;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+.home .content span{
+    font-size: 3.5rem;
+    color: #d67272;
+    text-shadow: 1px 2px 3px #a35656;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+.content p{
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(41, 41, 90);
+}
+/*Section HOme*/
+.content p{
+    font-size: 16px;
+    
+}
+.content hr{
+    color: white;
+}
+
+/*Sección de Articulos*/
+.productos{
+    font-family: 'Merriweather Sans', sans-serif;
+    background-color: rgb(255, 202, 210);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+.all-products{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.product{
+    overflow: hidden;
+    background: #ffffff;
+    color: #21201e;
+    text-align: center;
+    width: 240px;
+    height: 370px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.2rem;
+    margin: 2rem;
+}
+
+.product:hover img{
+    scale: 1.1;
+}
+
+.product:hover{
+    box-shadow: 5px 12px 20px #d67272;
+}
+
+.product .cont-img img{
+    height: 140px;
+    margin: 1rem;
+    transition: all 0.3s;
+}
+
+.product a:link, .product a:visited{
+    color: #ececec;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #21201e;
+    padding: 1.2rem 3rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    transition: all 0.2s;
+}
+
+.product a:hover{
+    transform: scale(1.1);
+}
+
+.product-title{
+    font-weight: 600;
+    color: #d67272;
+}
+
+.cont-prices{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Section Carrusel*/
+.Slider{
+    height: 300px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+}
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 7));
+    }
+}
+.Slider .gallery-container{
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 16);
+}
+.Slider .slide{
+    height: 300px;
+    width: 300px;
+}
+
+.slide img{
+    margin-left: 15px;
+    border-radius: 8px;
+}
+.slide img:hover{
+    transition: 1s;
+    transform: scale(1.1);
+    border-radius: 20%;
+    box-shadow: 0 2rem 2rem #ffcdb2;
+}
+
+.slide:hover{
+    transition: 1s;
+    margin: 10px;
+}
+
+/*------------------------ESTILOS DE FILTROS DE BUSQUEDA--------------------------*/
+.container-filtros{
+    display: flex;
+    justify-content: center;
+}
+.cont-categorias, .cont-estado{
+    width: 50%;
+    margin-right: 15px;
+}
+.cont-filtro-categoria, .cont-filtro-estado{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}

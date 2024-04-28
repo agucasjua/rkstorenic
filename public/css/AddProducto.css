@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(243, 148, 163);
+}
+
+.nav-back{
+    width: 100%;
+    background-color: antiquewhite;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-back a{
+    color: black;
+    text-decoration: none;
+}
+.cont-price{
+    display: flex;
+}
+.cont-categ-estatus{
+    display: flex;
+}
+
+.form-body{
+    width: 100%;
+}
+
+.cont-estado, .cont-preciocord{
+    margin-left: 20px;
+}
